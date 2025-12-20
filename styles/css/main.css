@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+/*Design System*/
+:root {
+  /*Colors*/
+  --main-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color: #99E2D0;
+  --background-color: #F6F6F6;
+  --green: #99E2D0;
+  --green-font: #008766;
+  --grey: #353535;
+  --grey2: #EAEAEA;
+  --button-gradient: linear-gradient(90deg, #9356DC 0%, #FF79DA 100%);
+  --primary2: #F5EDFF;
+  --grey-tin4: #7E7E7E;
+  /*Text config*/
+  /*Fonts*/
+  --body-font: "Roboto", sans-serif;
+  --restaurant-title-font: "Shrikhand", serif;
+  /*Font Sizes*/
+  --home-title-size: 1.5rem;
+  --restaurant-title-size: 1.75rem;
+  --body-size: 1.125rem;
+  --boutonText-size: 1rem;
+  --title-2-size: 1.125rem;
+  --card-description-size: 1.0625rem;
+  --plat-description-size: 0.94rem;
+  /*Font Weights*/
+  --home-title-weight: 700;
+  --restaurant-title-weight: 400;
+  --body-weight: 300;
+  --boutonText-weight: 500;
+  --title-2-weight: 500;
+  --card-description-weight: 300;
+  --plat-description-weight: 300;
+}
+
+/*Global Styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-size);
+  background-color: var(--background-color);
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--restaurant-title-size);
+  font-weight: var(--restaurant-title-weight);
+  font-family: var(--restaurant-title-font);
+  margin-bottom: 2.5rem;
+}
+
+.home h2 {
+  font-size: var(--home-title-size);
+  font-weight: var(--home-title-weight);
+  margin-bottom: 1.4375rem;
+}
+
+h3 {
+  font-size: var(--title-2-size);
+  font-weight: var(--title-2-weight);
+  margin-bottom: 0.625rem;
+}
+
+button, span {
+  font-size: var(--boutonText-size);
+  font-weight: var(--boutonText-weight);
+}
+
+.footer--title {
+  font-size: var(--title-2-size);
+  font-weight: 400;
+  color: white;
+  font-family: var(--restaurant-title-font);
+}
+
+/*# sourceMappingURL=main.css.map */
