@@ -1,0 +1,21 @@
+@use '../utils/_mixins.scss' as *;
+
+.RestaurantAppBar {
+   @include row-center;
+    position: relative;
+    height: 3.9375rem;
+    background-color: white;
+    &__logo {
+        width: 12.3125rem;
+        height: 2.25rem;
+    }
+    &__back {
+        position: absolute;
+        left: 1.0625rem;
+        top: 1.0625rem;
+        &--icon {
+            font-size: 1.7rem;
+            color: var(--grey);
+        }
+    }
+}
