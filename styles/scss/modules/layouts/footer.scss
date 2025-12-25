@@ -1,0 +1,25 @@
+.footer {
+    background-color: var(--grey);
+    padding: 1.375rem 1.5625rem;
+    color: white;
+    &--title {
+        margin-bottom: 1.125rem;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4375rem;
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 0.6875rem;
+            font-weight: 500;
+            &__normal {
+                font-weight: 400;
+            }
+            &--icon {
+                font-size: 0.8125rem;
+            }
+        }
+    }
+}
