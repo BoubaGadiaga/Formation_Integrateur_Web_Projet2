@@ -1,0 +1,32 @@
+@use '../utils/_mixins.scss' as *;
+@use '../utils/_variables.scss' as *;
+
+.HomeAppBar {
+    @include column-center;
+    &__header {
+        width: 100%;
+        @include row-center;
+        background-color: white;
+        height: 3.9375rem;
+        &__logo {
+            width: 12.3125rem;
+            height: 2.25rem;
+        }
+    }
+    &__location {
+        @include row-center;
+        width: 100%;
+        background-color: var(--grey2);
+        height: 3.125rem;
+        color: var(--grey);
+        box-shadow: $button-shadow;
+        &--icon {
+            margin-right: 1.0625rem;
+            font-size: 1rem;
+        }
+        &--text {
+            @include boutonText;
+        }
+    }
+
+}
