@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+.button {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  background: var(--button-gradient);
+  color: white;
+  padding: 0.8125rem 1.1720625rem;
+  font-size: var(--boutonText-size);
+  font-weight: var(--boutonText-weight);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: none;
+}
+
 .footer {
   background-color: var(--grey);
   padding: 1.375rem 1.5625rem;
@@ -96,7 +110,7 @@
   --green-font: #008766;
   --grey: #353535;
   --grey2: #EAEAEA;
-  --button-gradient: linear-gradient(90deg, #9356DC 0%, #FF79DA 100%);
+  --button-gradient: linear-gradient(-183deg, #FF79DA -30%, #9356DC 100%);
   --primary2: #F5EDFF;
   --grey-tin4: #7E7E7E;
   /*Text config*/

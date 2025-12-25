@@ -1,0 +1,15 @@
+@use '../utils/_variables.scss' as *;
+@use '../utils/_mixins.scss' as *;
+
+.button {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  background: var(--button-gradient);
+  color: white;
+  padding: 0.8125rem 1.1720625rem;
+  @include boutonText;
+  box-shadow: $button-shadow;
+  border-radius: 25px;
+  border: none;
+}
