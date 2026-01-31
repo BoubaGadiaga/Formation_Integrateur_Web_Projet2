@@ -1,5 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+.restaurant__list__card {
+  width: 21.45rem;
+  height: 15.6875rem;
+  border-radius: 15px;
+  background-color: white;
+}
+.restaurant__list__card__image {
+  width: 100%;
+  height: 10.875rem;
+  position: relative;
+}
+.restaurant__list__card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__list__card__image__badge {
+  position: absolute;
+  top: 0.8125rem;
+  left: 15.5rem;
+  background-color: var(--green);
+  color: var(--green-font);
+  padding: 0.4375rem 0.5625rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.restaurant__list__card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0.8125rem;
+}
+.restaurant__list__card__description__text {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant__list__card__description__text h3 {
+  margin-bottom: 0.3125rem;
+}
+.restaurant__list__card__description__text p {
+  font-size: var(--card-description-size);
+  font-weight: var(--card-description-weight);
+  color: var(--grey-tin2);
+}
+.restaurant__list__card__description .heart {
+  width: 1.375rem;
+  height: 1.3125rem;
+  position: relative;
+  margin-right: 0.75rem;
+}
+.restaurant__list__card__description .heart i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.375rem;
+}
+.restaurant__list__card__description .heart__outline {
+  color: black;
+}
+.restaurant__list__card__description .heart__fill {
+  background: linear-gradient(183deg, #9356DC -30%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
 .fonctionnalite__step {
   position: relative;
   display: flex;
@@ -176,7 +244,7 @@
 }
 
 /*Global Styles*/
-* {
+*, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
