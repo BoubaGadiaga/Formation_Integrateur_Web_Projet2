@@ -1,5 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+.fonctionnalite__step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 20.155625rem;
+  height: 4.52375rem;
+  padding-left: 1.625rem;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.fonctionnalite__step__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -0.75rem;
+  top: 51%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.fonctionnalite__step__icon {
+  color: var(--grey-tin4);
+  font-size: 1.2rem;
+}
+.fonctionnalite__step__icon--purple {
+  color: var(--main-color);
+}
+.fonctionnalite__step__text {
+  font-size: var(--boutonText-size);
+  font-weight: var(--boutonText-weight);
+}
+
 .button {
   display: block;
   width: fit-content;

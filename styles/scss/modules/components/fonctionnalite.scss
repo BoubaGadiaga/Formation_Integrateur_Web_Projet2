@@ -1,0 +1,44 @@
+@use '../utils/_mixins.scss' as *;
+@use '../utils/_variables.scss' as *;
+
+
+.fonctionnalite__step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 20.155625rem;
+  height: 4.52375rem;
+  padding-left: 1.625rem;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  box-shadow: $instruction-shadow;
+
+  &__number {
+    @include row-center;
+
+    position: absolute;
+    left: -0.75rem;
+    top: 51%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  &__icon {
+    color: var(--grey-tin4);
+    font-size: 1.2rem;
+    &--purple {
+      color: var(--main-color);
+    }
+  }
+
+  &__text {
+    @include boutonText;
+  }
+}
