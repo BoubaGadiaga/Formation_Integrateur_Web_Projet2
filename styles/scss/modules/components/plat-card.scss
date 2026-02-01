@@ -1,0 +1,25 @@
+.menu__info__card {
+    width: 21.8125rem;
+    background-color: white;
+    padding: 0.9375rem;
+    border-radius: 15.04px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__plats {
+        display: flex;
+        flex-direction: column;
+        &--name {
+            margin-bottom: 0.3125rem;
+        }
+        &--description {
+            font-size: var(--plat-description-size);
+            font-weight: var(--plat-description-weight);
+        }
+    }
+    &__prix {
+        font-size: var(--plat-description-size);
+        font-weight: 900;
+        color: #353535;
+    }
+}

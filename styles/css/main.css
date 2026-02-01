@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+.menu__info__card {
+  width: 21.8125rem;
+  background-color: white;
+  padding: 0.9375rem;
+  border-radius: 15.04px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu__info__card__plats {
+  display: flex;
+  flex-direction: column;
+}
+.menu__info__card__plats--name {
+  margin-bottom: 0.3125rem;
+}
+.menu__info__card__plats--description {
+  font-size: var(--plat-description-size);
+  font-weight: var(--plat-description-weight);
+}
+.menu__info__card__prix {
+  font-size: var(--plat-description-size);
+  font-weight: 900;
+  color: #353535;
+}
+
 .restaurant__list__card {
   width: 21.45rem;
   height: 15.6875rem;
