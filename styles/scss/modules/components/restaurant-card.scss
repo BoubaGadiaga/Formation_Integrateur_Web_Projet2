@@ -1,8 +1,11 @@
 .restaurant__list__card {
     width: 21.45rem;
+    min-width: 90.667vw;
     height: 15.6875rem;
     border-radius: 15px;
     background-color: white;
+    margin-left: -0.8vw;
+    margin-bottom: 1.125rem;
     &__image {
         width: 100%;
         height: 10.875rem;
@@ -16,7 +19,7 @@
         &__badge {
             position: absolute;
             top: 0.8125rem;
-            left: 15.5rem;
+            left: 73%;
             background-color: var(--green);
             color: var(--green-font);
             padding: 0.4375rem 0.5625rem;

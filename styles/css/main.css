@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+.reservation {
+  padding: 2.4375rem 6.6844vw 3.5625rem 9.09vw;
+  text-align: center;
+}
+.reservation__title {
+  margin: 0 14.43vw 1.125rem 8.556vw;
+}
+.reservation__description {
+  margin-bottom: 1.75rem;
+  color: var(--grey);
+}
+
+.fonctionnalite {
+  padding: 3rem 0 4.25rem 5.3333vw;
+  background-color: white;
+}
+
+.restaurants__section {
+  padding: 3.75rem 0 4.125rem 5.3333vw;
+}
+
 .menu__info__card {
   width: 21.8125rem;
   background-color: white;
@@ -28,9 +49,12 @@
 
 .restaurant__list__card {
   width: 21.45rem;
+  min-width: 90.667vw;
   height: 15.6875rem;
   border-radius: 15px;
   background-color: white;
+  margin-left: -0.8vw;
+  margin-bottom: 1.125rem;
 }
 .restaurant__list__card__image {
   width: 100%;
@@ -46,7 +70,7 @@
 .restaurant__list__card__image__badge {
   position: absolute;
   top: 0.8125rem;
-  left: 15.5rem;
+  left: 73%;
   background-color: var(--green);
   color: var(--green-font);
   padding: 0.4375rem 0.5625rem;
@@ -100,7 +124,9 @@
   align-items: center;
   gap: 1rem;
   width: 20.155625rem;
+  min-width: 86.227vw;
   height: 4.52375rem;
+  margin: 0 0 1.5625rem 0.75rem;
   padding-left: 1.625rem;
   background-color: var(--background-color);
   border-radius: 20px;
@@ -259,6 +285,7 @@
   --title-2-size: 1.125rem;
   --card-description-size: 1.0625rem;
   --plat-description-size: 0.94rem;
+  --paragraph-size: 1.125rem;
   /*Font Weights*/
   --home-title-weight: 700;
   --restaurant-title-weight: 400;
@@ -267,6 +294,7 @@
   --title-2-weight: 500;
   --card-description-weight: 300;
   --plat-description-weight: 300;
+  --paragraph-weight: 300;
 }
 
 /*Global Styles*/
@@ -281,6 +309,8 @@ body {
   font-size: var(--body-size);
   background-color: var(--background-color);
   color: #000000;
+  max-width: 1440px;
+  min-width: 374px;
 }
 
 a {
@@ -294,6 +324,11 @@ h1 {
   font-weight: var(--restaurant-title-weight);
   font-family: var(--restaurant-title-font);
   margin-bottom: 2.5rem;
+}
+
+p {
+  font-size: var(--paragraph-size);
+  font-weight: var(--paragraph-weight);
 }
 
 .home h2 {

@@ -1,3 +1,4 @@
+@use 'pages/index.scss';
 @use 'modules/components/plat-card.scss';
 @use 'modules/components/restaurant-card.scss';
 @use 'modules/components/fonctionnalite.scss';
@@ -36,6 +37,7 @@
     --title-2-size: 1.125rem;
     --card-description-size: 1.0625rem;
     --plat-description-size: 0.94rem;
+    --paragraph-size: 1.125rem;
 
     /*Font Weights*/
     --home-title-weight: 700;
@@ -45,6 +47,7 @@
     --title-2-weight: 500;
     --card-description-weight: 300;
     --plat-description-weight: 300;
+    --paragraph-weight: 300;
 }
 
 /*Global Styles*/
@@ -58,6 +61,8 @@ body {
     font-size: var(--body-size);
     background-color: var(--background-color);
     color: #000000;
+    max-width: 1440px;
+    min-width: 374px;
 }
 a {
     text-decoration: none;
@@ -69,6 +74,10 @@ h1 {
     font-weight: var(--restaurant-title-weight);
     font-family: var(--restaurant-title-font);
     margin-bottom: 2.5rem;
+}
+p {
+    font-size: var(--paragraph-size);
+    font-weight: var(--paragraph-weight);
 }
 .home h2 {
     font-size: var(--home-title-size);
