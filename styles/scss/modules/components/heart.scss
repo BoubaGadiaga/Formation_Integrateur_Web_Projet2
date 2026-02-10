@@ -1,0 +1,22 @@
+.heart {
+    width: 1.375rem;
+    height: 1.3125rem;
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 1.375rem;
+    }
+    &__outline {
+        color: black;
+    }
+    &__fill {
+        background: linear-gradient(183deg, #9356DC  -30%,  #FF79DA 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+
+    }
+}

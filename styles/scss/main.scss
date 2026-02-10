@@ -1,4 +1,6 @@
+@use 'pages/restaurant.scss';
 @use 'pages/index.scss';
+@use 'modules/components/heart.scss';
 @use 'modules/components/plat-card.scss';
 @use 'modules/components/restaurant-card.scss';
 @use 'modules/components/fonctionnalite.scss';
@@ -27,7 +29,7 @@
     /*Text config*/
     /*Fonts*/
     --body-font: 'Roboto', sans-serif;
-    --restaurant-title-font: 'Shrikhand', serif;
+    --restaurant-title-font: 'Shrikhand', sans-serif;
 
     /*Font Sizes*/
     --home-title-size: 1.5rem;
@@ -38,6 +40,7 @@
     --card-description-size: 1.0625rem;
     --plat-description-size: 0.94rem;
     --paragraph-size: 1.125rem;
+    --menu-section-title-size: 1rem;
 
     /*Font Weights*/
     --home-title-weight: 700;
@@ -48,6 +51,7 @@
     --card-description-weight: 300;
     --plat-description-weight: 300;
     --paragraph-weight: 300;
+    --menu-section-title-weight: 300;
 }
 
 /*Global Styles*/
@@ -73,7 +77,6 @@ h1 {
     font-size: var(--restaurant-title-size);
     font-weight: var(--restaurant-title-weight);
     font-family: var(--restaurant-title-font);
-    margin-bottom: 2.5rem;
 }
 p {
     font-size: var(--paragraph-size);

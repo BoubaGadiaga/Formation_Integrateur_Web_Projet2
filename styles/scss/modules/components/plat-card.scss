@@ -1,11 +1,13 @@
-.menu__info__card {
+.menu-page__menu__info__card {
     width: 21.8125rem;
+    min-width: 93.066vw;
     background-color: white;
     padding: 0.9375rem;
     border-radius: 15.04px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    box-shadow: 0 4.01px 15.04px rgba(0, 0, 0, 0.1);
     &__plats {
         display: flex;
         flex-direction: column;

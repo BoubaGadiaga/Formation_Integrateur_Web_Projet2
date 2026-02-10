@@ -1,5 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+.menu-page__image {
+  width: 100%;
+  height: 17, 1875rem;
+  object-fit: cover;
+}
+.menu-page__menu {
+  transform: translateY(-3.4375rem);
+  width: 100%;
+  background-color: var(--background-color);
+  border-radius: 40px 40px 0 0;
+  padding: 2.5rem 3.46vw;
+  margin-bottom: -2.5rem;
+}
+.menu-page__menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.875rem;
+  padding-right: 8vw;
+  padding-left: 0.8vw;
+}
+.menu-page__menu__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+.menu-page__menu__info--title {
+  font-size: var(--menu-section-title-size);
+  font-weight: var(--menu-section-title-weight);
+}
+.menu-page__menu__info--title::after {
+  content: "";
+  margin-top: 0.4375rem;
+  display: block;
+  width: 2.5rem;
+  height: 0.1875rem;
+  background-color: #99E2D0;
+}
+
 .reservation {
   padding: 2.4375rem 6.6844vw 3.5625rem 9.09vw;
   text-align: center;
@@ -13,7 +53,7 @@
 }
 
 .fonctionnalite {
-  padding: 3rem 0 4.25rem 5.3333vw;
+  padding: 3rem 0 2.6875rem 5.3333vw;
   background-color: white;
 }
 
@@ -21,27 +61,50 @@
   padding: 3.75rem 0 4.125rem 5.3333vw;
 }
 
-.menu__info__card {
+.heart {
+  width: 1.375rem;
+  height: 1.3125rem;
+  position: relative;
+}
+.heart i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.375rem;
+}
+.heart__outline {
+  color: black;
+}
+.heart__fill {
+  background: linear-gradient(183deg, #9356DC -30%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.menu-page__menu__info__card {
   width: 21.8125rem;
+  min-width: 93.066vw;
   background-color: white;
   padding: 0.9375rem;
   border-radius: 15.04px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  box-shadow: 0 4.01px 15.04px rgba(0, 0, 0, 0.1);
 }
-.menu__info__card__plats {
+.menu-page__menu__info__card__plats {
   display: flex;
   flex-direction: column;
 }
-.menu__info__card__plats--name {
+.menu-page__menu__info__card__plats--name {
   margin-bottom: 0.3125rem;
 }
-.menu__info__card__plats--description {
+.menu-page__menu__info__card__plats--description {
   font-size: var(--plat-description-size);
   font-weight: var(--plat-description-weight);
 }
-.menu__info__card__prix {
+.menu-page__menu__info__card__prix {
   font-size: var(--plat-description-size);
   font-weight: 900;
   color: #353535;
@@ -49,7 +112,7 @@
 
 .restaurant__list__card {
   width: 21.45rem;
-  min-width: 90.667vw;
+  min-width: 90.66vw;
   height: 15.6875rem;
   border-radius: 15px;
   background-color: white;
@@ -97,25 +160,7 @@
   color: var(--grey-tin2);
 }
 .restaurant__list__card__description .heart {
-  width: 1.375rem;
-  height: 1.3125rem;
-  position: relative;
   margin-right: 0.75rem;
-}
-.restaurant__list__card__description .heart i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.375rem;
-}
-.restaurant__list__card__description .heart__outline {
-  color: black;
-}
-.restaurant__list__card__description .heart__fill {
-  background: linear-gradient(183deg, #9356DC -30%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
 }
 
 .fonctionnalite__step {
@@ -167,11 +212,13 @@
   background: var(--button-gradient);
   color: white;
   padding: 0.8125rem 1.1720625rem;
-  font-size: var(--boutonText-size);
-  font-weight: var(--boutonText-weight);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
+}
+.button--restaurants {
+  width: 11.625rem;
+  height: 3.125rem;
 }
 
 .footer {
@@ -276,7 +323,7 @@
   /*Text config*/
   /*Fonts*/
   --body-font: "Roboto", sans-serif;
-  --restaurant-title-font: "Shrikhand", serif;
+  --restaurant-title-font: "Shrikhand", sans-serif;
   /*Font Sizes*/
   --home-title-size: 1.5rem;
   --restaurant-title-size: 1.75rem;
@@ -286,6 +333,7 @@
   --card-description-size: 1.0625rem;
   --plat-description-size: 0.94rem;
   --paragraph-size: 1.125rem;
+  --menu-section-title-size: 1rem;
   /*Font Weights*/
   --home-title-weight: 700;
   --restaurant-title-weight: 400;
@@ -295,6 +343,7 @@
   --card-description-weight: 300;
   --plat-description-weight: 300;
   --paragraph-weight: 300;
+  --menu-section-title-weight: 300;
 }
 
 /*Global Styles*/
@@ -323,7 +372,6 @@ h1 {
   font-size: var(--restaurant-title-size);
   font-weight: var(--restaurant-title-weight);
   font-family: var(--restaurant-title-font);
-  margin-bottom: 2.5rem;
 }
 
 p {

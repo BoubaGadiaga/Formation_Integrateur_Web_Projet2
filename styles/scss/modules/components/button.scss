@@ -8,8 +8,11 @@
   background: var(--button-gradient);
   color: white;
   padding: 0.8125rem 1.1720625rem;
-  @include boutonText;
   box-shadow: $button-shadow;
   border-radius: 25px;
   border: none;
+  &--restaurants {
+    width: 11.625rem;
+    height: 3.125rem;
+  }
 }
