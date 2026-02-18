@@ -9,6 +9,7 @@
   color: white;
   padding: 0.8125rem 1.1720625rem;
   box-shadow: $button-shadow;
+  @include boutonText;
   border-radius: 25px;
   border: none;
   &--restaurants {

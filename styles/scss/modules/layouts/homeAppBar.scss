@@ -12,6 +12,13 @@
             width: 12.3125rem;
             height: 2.25rem;
         }
+        @media screen and (max-width: 1440px) and (min-width: 1024px) {
+            height: 6rem;
+            &__logo {
+                width: 12.5rem;
+                height: 2.1375rem;
+            }
+        }
     }
     &__location {
         @include row-center;
