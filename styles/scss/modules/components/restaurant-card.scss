@@ -1,12 +1,11 @@
 .restaurant__list__card {
-    width: 21.45rem;
-    min-width: 90.66vw;
+    min-width: 100%;
     height: 15.6875rem;
     border-radius: 15px;
-    background-color: white;
-    margin-left: -0.8vw;
-    @media screen and (max-width: 1440px) and (min-width: 1024px) {
-        min-width: 34.027vw;
+    background-color: #ffffff;
+    margin-left: -0.8%;
+    @media screen and (min-width: 1024px) {
+        min-width: 45.37%;
         margin-left: 0;
     }
 
@@ -33,6 +32,7 @@
         }
     }
     &__description {
+        background-color: #ffffff;
         display: flex;
         justify-content: space-between;
         align-items: center;

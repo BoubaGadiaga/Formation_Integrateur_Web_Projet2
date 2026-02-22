@@ -1,6 +1,5 @@
 .menu-page__menu__info__card {
-    width: 21.8125rem;
-    min-width: 93.066vw;
+    min-width: 93.066%;
     background-color: white;
     padding: 0.9375rem;
     border-radius: 15.04px;
@@ -24,5 +23,7 @@
         font-weight: 900;
         color: #353535;
     }
-
+    @media screen and (min-width:1024px) {
+        min-width: 60.1%;
+    }
 }

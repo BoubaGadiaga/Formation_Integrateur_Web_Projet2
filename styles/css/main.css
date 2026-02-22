@@ -10,16 +10,16 @@
   width: 100%;
   background-color: var(--background-color);
   border-radius: 40px 40px 0 0;
-  padding: 2.5rem 3.46vw;
-  margin-bottom: -2.5rem;
+  padding: 2.5rem 3.46%;
+  margin-bottom: -3.4375rem;
 }
 .menu-page__menu__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.875rem;
-  padding-right: 8vw;
-  padding-left: 0.8vw;
+  padding-right: 8%;
+  padding-left: 0.8%;
 }
 .menu-page__menu__info {
   display: flex;
@@ -39,13 +39,33 @@
   height: 0.1875rem;
   background-color: #99E2D0;
 }
+@media screen and (min-width: 1024px) {
+  .menu-page {
+    background-color: white;
+  }
+  .menu-page__image {
+    height: 21.4375rem;
+  }
+  .menu-page__menu {
+    width: 73.264%;
+    padding: 2.5rem 14.58%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -3.4375rem;
+  }
+  .menu-page__menu__header {
+    justify-content: center;
+    padding: 0;
+    gap: 1.67%;
+  }
+}
 
 .reservation {
-  padding: 2.4375rem 6.6844vw 3.5625rem 9.09vw;
+  padding: 2.4375rem 6.6844% 3.5625rem 9.09%;
   text-align: center;
 }
 .reservation__title {
-  margin: 0 14.43vw 1.125rem 8.556vw;
+  margin: 0 14.43% 1.125rem 8.556%;
 }
 .reservation__description {
   margin-bottom: 1.75rem;
@@ -53,20 +73,20 @@
 }
 
 .fonctionnalite {
-  padding: 3rem 5.3333vw;
+  padding: 3rem 5.3333%;
   background-color: white;
 }
 
 .restaurants__section {
-  padding: 3.0625rem 5.3333vw;
+  margin: 3.0625rem 5.3333%;
 }
 .restaurants__list {
   gap: 1.125rem;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .home h2.reservation {
-    padding: 1.875rem 27.6vw;
+    padding: 1.875rem 27.6%;
   }
   .home h2.reservation__title {
     font-size: 2.5rem;
@@ -76,16 +96,17 @@
     margin-bottom: 1.875rem;
   }
   .fonctionnalite {
-    padding: 3.125rem 12.5vw;
+    padding: 3.125rem 12.5%;
   }
   .fonctionnalite__containeur {
     display: flex;
-    gap: 2.25rem;
+    gap: 2.3%;
   }
   .restaurants__section {
-    padding: 1.875rem 12.5vw;
+    margin: 1.875rem 12.5%;
   }
   .restaurants__list {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -111,11 +132,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  transform: opacity 1s ease-in-out;
 }
-
+.heart__fill :active {
+  opacity: 1;
+}
 .menu-page__menu__info__card {
-  width: 21.8125rem;
-  min-width: 93.066vw;
+  min-width: 93.066%;
   background-color: white;
   padding: 0.9375rem;
   border-radius: 15.04px;
@@ -140,18 +163,22 @@
   font-weight: 900;
   color: #353535;
 }
+@media screen and (min-width: 1024px) {
+  .menu-page__menu__info__card {
+    min-width: 60.1%;
+  }
+}
 
 .restaurant__list__card {
-  width: 21.45rem;
-  min-width: 90.66vw;
+  min-width: 100%;
   height: 15.6875rem;
   border-radius: 15px;
-  background-color: white;
-  margin-left: -0.8vw;
+  background-color: #ffffff;
+  margin-left: -0.8%;
 }
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .restaurant__list__card {
-    min-width: 34.027vw;
+    min-width: 45.37%;
     margin-left: 0;
   }
 }
@@ -178,6 +205,7 @@
   font-weight: 500;
 }
 .restaurant__list__card__description {
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,7 +234,7 @@
   align-items: center;
   gap: 1rem;
   width: 20.155625rem;
-  min-width: 86.227vw;
+  min-width: 100%;
   height: 4.52375rem;
   margin: 0 0 1.5625rem 0.75rem;
   padding-left: 1.625rem;
@@ -214,9 +242,9 @@
   border-radius: 20px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .fonctionnalite__step {
-    min-width: 23.26vw;
+    min-width: 31.81%;
     margin: 0;
   }
 }
@@ -249,21 +277,50 @@
 }
 
 .button {
+  z-index: 1;
   display: block;
+  position: relative;
   width: fit-content;
   margin: auto;
   background: var(--button-gradient);
   color: white;
+  cursor: pointer;
   padding: 0.8125rem 1.1720625rem;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  font-size: var(--boutonText-size);
-  font-weight: var(--boutonText-weight);
   border-radius: 25px;
   border: none;
 }
 .button--restaurants {
   width: 11.625rem;
   height: 3.125rem;
+}
+.button__text {
+  font-size: var(--boutonText-size);
+  font-weight: var(--boutonText-weight);
+  position: relative;
+  display: inline-block;
+  transition: transform 315ms 305ms linear;
+  z-index: 3;
+}
+.button::before {
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: all 300ms ease-out;
+}
+.button:hover::before {
+  opacity: 0.15;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+}
+.button:hover .button__text {
+  transform: translate(0.05rem, 0.1rem);
 }
 
 .footer {
@@ -291,7 +348,7 @@
 .footer__links__link--icon {
   font-size: 0.8125rem;
 }
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .footer {
     height: 7.125rem;
     padding: 1.875rem 1.5625rem;
@@ -334,13 +391,22 @@
   font-size: 1.7rem;
   color: var(--grey);
 }
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .RestaurantAppBar {
     height: 6rem;
   }
   .RestaurantAppBar__logo {
-    width: 12.5;
-    height: 2.1375;
+    width: 12.5rem;
+    height: 2.1375rem;
+  }
+  .RestaurantAppBar__back {
+    position: absolute;
+    left: 1.0625rem;
+    top: 2.0625rem;
+  }
+  .RestaurantAppBar__back--icon {
+    font-size: 1.3rem;
+    color: var(--grey);
   }
 }
 
@@ -362,7 +428,7 @@
   width: 12.3125rem;
   height: 2.25rem;
 }
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .HomeAppBar__header {
     height: 6rem;
   }
@@ -444,6 +510,7 @@ body {
   color: #000000;
   max-width: 1440px;
   min-width: 374px;
+  margin: auto;
 }
 
 a {

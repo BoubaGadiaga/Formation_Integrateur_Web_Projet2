@@ -18,4 +18,20 @@
             color: var(--grey);
         }
     }
+    @media screen and (min-width: 1024px) {
+        height: 6rem;
+        &__logo {
+            width: 12.5rem;
+            height: 2.1375rem;
+        }
+        &__back {
+            position: absolute;
+            left: 1.0625rem;
+            top: 2.0625rem;
+            &--icon {
+                font-size: 1.3rem;
+                color: var(--grey);
+            }
+        }
+    }
 }

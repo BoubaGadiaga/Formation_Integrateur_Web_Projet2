@@ -9,15 +9,15 @@
         width: 100%;
         background-color: var(--background-color);
         border-radius: 40px 40px 0 0;
-        padding: 2.5rem 3.46vw;
-        margin-bottom: -2.5rem;
+        padding: 2.5rem 3.46%;
+        margin-bottom: -3.4375rem;
         &__header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1.875rem;
-            padding-right: 8vw;
-            padding-left: 0.8vw;
+            padding-right: 8%;
+            padding-left: 0.8%;
         }
         &__info {
             display: flex;
@@ -36,6 +36,24 @@
                     height: 0.1875rem;
                     background-color: #99E2D0;
                 }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        background-color: white;
+        &__image {
+            height: 21.4375rem;
+        }
+        &__menu {
+            width: 73.264%;
+            padding: 2.5rem 14.58%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: -3.4375rem;
+            &__header {
+                justify-content: center;
+                padding: 0;
+                gap:1.67%;
             }
         }
     }
