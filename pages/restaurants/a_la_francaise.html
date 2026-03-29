@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Ajout du favicon -->
     <link rel="icon" href="../../assets/logos/Ohmyfood.svg" type="image/svg+xml">
-    <title>menu-page__Menu - A la francaise</title>
+    <title>Menu - À la française</title>
     <!-- Ajout de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Ajout du fichier CSS -->
@@ -13,19 +13,20 @@
 </head>
 <body class="menu-page">
     <header class="RestaurantAppBar">
-        <a href="..\index.html" class="RestaurantAppBar__back">
+        <a href="../index.html" class="RestaurantAppBar__back">
             <i class="fa-solid fa-arrow-left RestaurantAppBar__back--icon" ></i>
         </a>
         <img src="../../assets/logos/Ohmyfood.svg" alt="Logo Ohmyfood" class="RestaurantAppBar__logo">
     </header>
-    <img src="..\..\assets\images\restaurants\a_la_francaise.jpg" alt="Restaurant À la française" class="menu-page__image">
+    <img src="../../assets/images/restaurants/a_la_francaise.jpg" alt="Restaurant À la française" class="menu-page__image">
     <main class="menu-page__menu">
         <div class="menu-page__menu__header">
             <h1 class="menu-page__menu__header--title">À la française</h1>
             <div class="heart">
-                                <i class="fa-regular fa-heart heart__outline"></i>
-                                <i class="fa-solid fa-heart heart__fill"></i>
-                            </div>
+                <input type="checkbox" class="heart__checkbox">
+                <i class="fa-solid fa-heart heart__fill"></i>
+                <i class="fa-regular fa-heart heart__outline"></i>
+            </div>
         </div>
         <section class="menu-page__menu__info">
             <h2 class="menu-page__menu__info--title">ENTRÉES</h2>

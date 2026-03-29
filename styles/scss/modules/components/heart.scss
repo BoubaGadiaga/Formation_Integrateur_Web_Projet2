@@ -1,7 +1,26 @@
+@use '../utils/_variables.scss' as *;
+
 .heart {
     width: 1.375rem;
     height: 1.3125rem;
     position: relative;
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 3;
+        margin: 0;
+        &:checked {
+            &+.heart__fill {
+                opacity: 1;
+                &+.heart__outilne {
+                    opacity: 0;
+                }
+            }
+        }
+    }
 
     i {
         position: absolute;
@@ -11,12 +30,17 @@
     }
     &__outline {
         color: black;
+        opacity: 1;
+        transition: opacity $heart-button-duration ease-in-out;
+        z-index: 0;
     }
     &__fill {
         background: linear-gradient(183deg, #9356DC  -30%,  #FF79DA 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 0;
-
+        transition: opacity $heart-button-duration ease-in-out;
+        z-index: 1;
     }
+
 }

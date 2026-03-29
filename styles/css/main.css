@@ -20,6 +20,7 @@
   margin-bottom: 1.875rem;
   padding-right: 8%;
   padding-left: 0.8%;
+  position: relative;
 }
 .menu-page__menu__info {
   display: flex;
@@ -56,7 +57,7 @@
   .menu-page__menu__header {
     justify-content: center;
     padding: 0;
-    gap: 1.67%;
+    gap: 5.19%;
   }
 }
 
@@ -81,18 +82,20 @@
   margin: 3.0625rem 5.3333%;
 }
 .restaurants__list {
+  display: flex;
+  flex-direction: column;
   gap: 1.125rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .home h2.reservation {
+  .home .reservation {
     padding: 1.875rem 27.6%;
   }
-  .home h2.reservation__title {
+  .home .reservation__title {
     font-size: 2.5rem;
     margin: 0 0 1.875rem 0;
   }
-  .home h2.reservation__description {
+  .home .reservation__description {
     margin-bottom: 1.875rem;
   }
   .fonctionnalite {
@@ -107,7 +110,6 @@
   }
   .restaurants__list {
     width: 100%;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -118,6 +120,21 @@
   height: 1.3125rem;
   position: relative;
 }
+.heart__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+  margin: 0;
+}
+.heart__checkbox:checked + .heart__fill {
+  opacity: 1;
+}
+.heart__checkbox:checked + .heart__fill + .heart__outilne {
+  opacity: 0;
+}
 .heart i {
   position: absolute;
   top: 0;
@@ -126,17 +143,19 @@
 }
 .heart__outline {
   color: black;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+  z-index: 0;
 }
 .heart__fill {
   background: linear-gradient(183deg, #9356DC -30%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  transform: opacity 1s ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  z-index: 1;
 }
-.heart__fill :active {
-  opacity: 1;
-}
+
 .menu-page__menu__info__card {
   min-width: 93.066%;
   background-color: white;
@@ -170,17 +189,24 @@
 }
 
 .restaurant__list__card {
+  position: relative;
+  background-color: #ffffff;
   min-width: 100%;
   height: 15.6875rem;
   border-radius: 15px;
-  background-color: #ffffff;
   margin-left: -0.8%;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .restaurant__list__card {
     min-width: 45.37%;
     margin-left: 0;
   }
+}
+.restaurant__list__card > .heart {
+  position: absolute;
+  bottom: 2.0625rem;
+  right: 1.5625rem;
 }
 .restaurant__list__card__image {
   width: 100%;
@@ -191,7 +217,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px 15px 0 0;
   object-position: center 69%;
 }
 .restaurant__list__card__image__badge {
@@ -205,10 +230,6 @@
   font-weight: 500;
 }
 .restaurant__list__card__description {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   padding: 1rem 0.8125rem;
 }
@@ -223,9 +244,6 @@
   font-size: var(--card-description-size);
   font-weight: var(--card-description-weight);
   color: var(--grey-tin2);
-}
-.restaurant__list__card__description .heart {
-  margin-right: 0.75rem;
 }
 
 .fonctionnalite__step {
