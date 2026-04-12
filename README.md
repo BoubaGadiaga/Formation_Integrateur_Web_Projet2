@@ -61,4 +61,4 @@ Vous pouvez retrouver le [brief complet ici](https://s3-eu-west-1.amazonaws.com/
 * Convention nommage commit
 
 ## Tester le projet
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood](https://boubagadiaga.github.io/Formation_IntegrateurWeb_Projet2)
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood](https://boubagadiaga.github.io/Formation_Integrateur_Web_Projet2)
