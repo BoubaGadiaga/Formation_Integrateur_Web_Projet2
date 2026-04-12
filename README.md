@@ -60,5 +60,8 @@ Vous pouvez retrouver le [brief complet ici](https://s3-eu-west-1.amazonaws.com/
 * Compatibilité : Dernières versions de Chrome, Firefox & Safari
 * Convention nommage commit
 
+## Maquettes
+* Voici le [lien de la maquette](https://www.figma.com/design/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood--mobile-et-desktop-?node-id=0-1&p=f&t=qn7EPak7pYVQf0nv-0)
+
 ## Tester le projet
 Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood](https://boubagadiaga.github.io/Formation_Integrateur_Web_Projet2)
