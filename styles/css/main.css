@@ -187,6 +187,14 @@
 .heart__checkbox:checked + .heart__fill + .heart__outilne {
   opacity: 0;
 }
+@media screen and (min-width: 1024px) {
+  .heart__checkbox:hover + .heart__fill {
+    opacity: 1;
+  }
+  .heart__checkbox:hover + .heart__fill + .heart__outilne {
+    opacity: 0;
+  }
+}
 .heart i {
   position: absolute;
   top: 0;
@@ -210,16 +218,65 @@
 
 .menu-page__menu__info__card {
   min-width: 93.066%;
+  height: 69px;
   background-color: white;
   padding: 0;
   border-radius: 15.04px;
   display: flex;
-  align-items: flex-end;
   box-shadow: 0 4.01px 15.04px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  opacity: 0;
-  transform: translateY(20px);
   animation: apparition 0.5s linear forwards;
+}
+.menu-page__menu__info__card__fin {
+  display: flex;
+  justify-content: flex-start;
+  width: min-content;
+  flex: 0 0 0;
+  margin-left: 1.25rem;
+  margin-right: -59px;
+  transition: margin-right 0.5s ease;
+}
+.menu-page__menu__info__card__fin__prix {
+  margin: 0 0.9375rem 0.9375rem 0;
+  font-size: var(--plat-description-size);
+  font-weight: 900;
+  color: #353535;
+  align-self: flex-end;
+}
+.menu-page__menu__info__card__fin__check {
+  min-width: 59px;
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.menu-page__menu__info__card__fin__check .fa-circle-check {
+  color: white;
+  font-size: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+.menu-page__menu__info__card__plats {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  z-index: 1;
+  margin: 0.9375rem 0 0.9375rem 0.9375rem;
+  overflow: hidden;
+}
+.menu-page__menu__info__card__plats--nom {
+  margin-bottom: 0.3125rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu-page__menu__info__card__plats--description {
+  font-size: var(--plat-description-size);
+  font-weight: var(--plat-description-weight);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu-page__menu__info__card__checkbox {
   position: absolute;
@@ -230,75 +287,21 @@
   z-index: 3;
   margin: 0;
 }
-.menu-page__menu__info__card__checkbox:checked ~ .menu-page__menu__info__card__check {
-  transform: translateX(0);
+.menu-page__menu__info__card__checkbox:checked ~ .menu-page__menu__info__card__fin {
+  margin-right: 0;
 }
-.menu-page__menu__info__card__checkbox:checked ~ .menu-page__menu__info__card__check .fa-circle-check {
+.menu-page__menu__info__card__checkbox:checked ~ .menu-page__menu__info__card__fin ~ .menu-page__menu__info__card__check .fa-circle-check {
   transform: rotate(360deg);
-}
-.menu-page__menu__info__card__checkbox:checked ~ .menu-page__menu__info__card--prix {
-  transform: translateX(0);
-}
-.menu-page__menu__info__card__plats {
-  display: flex;
-  flex-direction: column;
-  z-index: 0;
-  margin: 0.9375rem 0 0.9375rem 0.9375rem;
-  flex: 1;
-  min-width: 0;
-}
-.menu-page__menu__info__card__plats--name {
-  margin-bottom: 0.3125rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu-page__menu__info__card__plats--description {
-  font-size: var(--plat-description-size);
-  font-weight: var(--plat-description-weight);
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu-page__menu__info__card--prix {
-  margin: 0 1.25rem 0.9375rem 0.9375rem;
-  font-size: var(--plat-description-size);
-  font-weight: 900;
-  color: #353535;
-  z-index: 0;
-}
-.menu-page__menu__info__card__check {
-  width: 59px;
-  align-self: stretch;
-  background-color: var(--green);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  z-index: 1;
-}
-.menu-page__menu__info__card__check .fa-circle-check {
-  color: white;
-  font-size: 20px;
-  transform: rotate(0deg);
-  transition: transform 0.5s ease;
-}
-.menu-page__menu__info__card__check, .menu-page__menu__info__card--prix {
-  transform: translateX(60px);
-  transition: transform 0.3s ease;
 }
 @media screen and (min-width: 1024px) {
   .menu-page__menu__info__card {
     min-width: 60.1%;
   }
-  .menu-page__menu__info__card:hover .menu-page__menu__info__card__check {
-    transform: translateX(0);
+  .menu-page__menu__info__card:hover .menu-page__menu__info__card__fin {
+    margin-right: 0;
   }
-  .menu-page__menu__info__card:hover .menu-page__menu__info__card__check .fa-circle-check {
+  .menu-page__menu__info__card:hover .menu-page__menu__info__card__fin .menu-page__menu__info__card__fin__check .fa-circle-check {
     transform: rotate(360deg);
-  }
-  .menu-page__menu__info__card:hover .menu-page__menu__info__card--prix {
-    transform: translateX(0);
   }
 }
 

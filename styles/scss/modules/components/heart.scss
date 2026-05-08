@@ -20,6 +20,17 @@
                 }
             }
         }
+        @media screen and (min-width:1024px) {
+            &:hover {
+                &+.heart__fill {
+                    opacity: 1;
+                    &+.heart__outilne {
+                        opacity: 0;
+                    }
+                }
+            }
+
+        }
     }
 
     i {
